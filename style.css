@@ -272,9 +272,46 @@
 
 /* latest deals section start here  */
 
+/* join section start here */
+.join-section{
+    margin-bottom: 50px;
+    background-image: url("images/news-letter-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.join-text{
+    text-align: center;
+    padding: 199px 0 193px 0;
+}
+.join-section-title{
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 23px;
+    color: #ffffff;
+}
+.input-email{
+    padding: 16px 0 16px 0;
+    width: 540px;
+    border: none;
+}
+input::placeholder{
+    padding-left: 20px;
+}
+.sub-btn{
+    padding: 16px 53px;
+    font-weight: 600;
+    background-color: #E95A08;
+    color: #ffffff;
+    border: none;
+}
+/* join section start here */
+
 /* media screen section  */
 /* for mobile  */
 @media screen and (max-width: 576px) {
+    /* header section start here  */
     .header-section{
         margin: 20px;
     }
@@ -285,6 +322,8 @@
     .link-item .a-1, .a-2, .a-3{
         display: none;
     }
+
+    /* fresh section start here  */
     .fresh-section{
         flex-direction: column-reverse;
         gap: 24px;
@@ -300,6 +339,8 @@
     .fresh-section-description{
         font-size: 1rem;
     }
+
+    /* plant section start here  */
     .plant-section{
         margin: 20px;
     }
@@ -320,6 +361,8 @@
     .plant-card-title, .plant-card-price{
         font-size: 1rem;
     }
+
+    /* flower section start here  */
     .flower-lover-section{
         flex-direction: column;
         margin: 20px;
@@ -345,6 +388,8 @@
         line-height: 20px;
         margin: 10px 0 0 25px;
     }
+
+    /* latest section start here  */
     .latest-deal-section{
         margin: 20px;
     }
@@ -405,5 +450,26 @@
      .first-text-4{
        font-size: 1rem;
        font-family: 600; 
+    }
+
+    /* join section start here  */
+    .join-section{
+       margin-top: 120px;  
+       margin-bottom: 50px;
+       background-image: url("images/news-letter-bg.png");
+       background-position: auto;
+       background-repeat: no-repeat;
+       background-size: auto 276px;
+       background-attachment: scroll;
+    }
+    .join-section-title{
+        font-size: 1.3rem;
+    }
+    .input-email{
+        width: 60%;
+    }
+    .sub-btn{
+        padding: 16px 19px;
+        width: 30%;
     }
 }
