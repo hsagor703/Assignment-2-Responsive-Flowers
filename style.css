@@ -26,6 +26,9 @@
     max-width: 90rem;
     margin: 0 auto;
 }
+.icon{
+   font-size: 2rem;
+}
 .color-black{
     color: #000000;
 }
@@ -147,6 +150,18 @@
     top: -120px;
     left: 340px;
     z-index: 1;
+}
+.flower-img-1 img{
+    animation: circle 4s linear infinite;
+
+}
+@keyframes circle{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
 }
 .flower-img .flower-img-2{
     width: 540px;
@@ -308,6 +323,53 @@ input::placeholder{
 }
 /* join section start here */
 
+/* footer section start here */
+.footer-section{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.section-1{
+    width: 270px;
+} 
+.footer-img{
+    height: 82px;
+    width: 135px;
+    margin-bottom: 16px;
+}
+.footer-description{
+    font-weight: 1.4rem;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer-link, .footer-services-item, .footer-icon-item{
+    list-style: none;
+    margin-bottom: 32px;
+}
+.footer-link a, .footer-services-item a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer-icon-items {
+    display: flex;
+    gap: 24px;
+    justify-content: end;
+}
+.fa-linkedin{
+    color: #0077B5;
+}
+.fa-x-twitter{
+    color: black;
+}
+.fa-facebook{
+    color: 	#1877F2
+}
+.fa-youtube{
+    color: 	#FF0000;
+}
+
+/* footer section ends here */
+
 /* media screen section  */
 /* for mobile  */
 @media screen and (max-width: 576px) {
@@ -454,8 +516,8 @@ input::placeholder{
 
     /* join section start here  */
     .join-section{
-       margin-top: 120px;  
-       margin-bottom: 50px;
+       margin-top: 120px;
+       margin-bottom: -50px;
        background-image: url("images/news-letter-bg.png");
        background-position: auto;
        background-repeat: no-repeat;
@@ -471,5 +533,19 @@ input::placeholder{
     .sub-btn{
         padding: 16px 19px;
         width: 30%;
+    }
+    
+    
+    /* footer section start here  */
+    .footer-section{
+        flex-direction: column;
+        margin: 0 20px 20px 20px;
+    }
+    .section-1{
+       width: 370px;
+       margin-bottom: 20px;
+    } 
+    .footer-icon-items {
+       justify-content: start;
     }
 }
