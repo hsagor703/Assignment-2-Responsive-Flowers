@@ -171,6 +171,107 @@
  }
 /* flower lover section ends here  */
 
+/* latest deals section start here  */
+.latest-deal-section{
+    margin-bottom: 120px;
+}
+.latest-1{
+    height: 400px;
+    display: flex;
+    gap: 28px;
+}
+.latest-1 img{
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 22px;
+}
+.dubble-img{
+    position: relative;
+}
+.dubble-img img{
+    height: 50%;
+}
+.single-img{
+    position: relative;
+}
+.single-img img{
+    z-index: 0;
+    width: auto;
+}
+.d-img{
+    position: relative;
+    z-index: 0;
+}
+.gradient{
+    background-color: rgb(19, 19, 20);
+    position: absolute;
+    height: 199px;
+    width: 100%;
+    border-radius: 20px;
+    top: 0px;
+    opacity: .4;
+}
+.gradient-2{
+    background-color: rgb(19, 19, 20);
+    position: absolute;
+    height: 195px;
+    width: 100%;
+    border-radius: 20px;
+    top: 226px;
+    opacity: .4;
+}
+.gradient-3{
+    background-color: rgb(19, 19, 20);
+    position: absolute;
+    height: 425px;
+    width: 100%;
+    border-radius: 20px;
+    top: 0;
+    opacity: .4;
+}
+.text-1{
+    position: absolute;
+    top: 70px;
+    right: 60px;
+}
+.text-2{
+    position: absolute;
+    top: 300px;
+    right: 60px;
+}
+.text-3{
+    position: absolute;
+    top: 170px;
+    right: 180px;
+}
+.first-text-1{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+.first-text-2{
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: underline;
+}
+.first-text-3{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+.first-text-4{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* latest deals section start here  */
+
 /* media screen section  */
 /* for mobile  */
 @media screen and (max-width: 576px) {
@@ -196,17 +297,28 @@
         font-size: 1.5rem;
         margin-bottom: 12px;
     }
+    .fresh-section-description{
+        font-size: 1rem;
+    }
     .plant-section{
         margin: 20px;
     }
+    .plant-title{
+        font-size: 1.5rem;
+    }
     .plant-description{
         width: 100%;
+        font-size: 1rem;
+        line-height: 20px;
     }
     .plant-body{
         grid-template-columns: repeat(2, 1fr);
     }
     .plant-card-body, img{
         width: 100%;
+    }
+    .plant-card-title, .plant-card-price{
+        font-size: 1rem;
     }
     .flower-lover-section{
         flex-direction: column;
@@ -233,5 +345,65 @@
         line-height: 20px;
         margin: 10px 0 0 25px;
     }
-    
+    .latest-deal-section{
+        margin: 20px;
+    }
+    .latest-1{
+        flex-direction: column;
+    }
+    .d-img .latest-1-img{
+        height: 184.5px;
+    }
+    .d-img .latest-01-img{
+        border-radius: 14px;
+    }
+    .d-img .latest-02-img{
+        border-radius: 0;
+    }
+    .gradient, .gradient-2, .gradient-3{
+        height: 184.5px;
+    }
+    .gradient{
+        border-radius: 14px;
+    }
+    .gradient-2{
+        top: 215px;
+        opacity: .4;
+        border-radius: 0;
+    }
+    .text-1{
+        top: 60px;
+        left: 59px;
+    }
+    .text-2{
+        top: 275px;
+        left: 45px;
+    }
+    .first-text-1, .first-text-2{
+        margin-bottom: 19px;
+    }
+    .single-img img{
+        height: 172px;
+        margin-top: -30px;
+        width: 100%;
+        border-radius: 14px;
+    }
+    .gradient-3{
+        top: -31px;
+        height: 172px;
+        border-radius: 14px;
+    }
+    .text-3{
+        top: 25px;
+        right: 0;
+        left: 5px;
+    }
+     .first-text-3{
+       font-size: 1.3rem;
+       margin-bottom: 19px;  
+    }
+     .first-text-4{
+       font-size: 1rem;
+       font-family: 600; 
+    }
 }
